@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorAPPBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        app:logo="@null"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:background="@color/colorMain"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:text="分类"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/id_back_arrow_image"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_arrow_left"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <com.js.oldmarket.view.SwipeRefresh
+        android:id="@+id/id_swiperefresh"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:paddingTop="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="85dp">
+                        <ImageView
+                            android:id="@+id/id_type_image"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/button_phone"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp" />
+                        <TextView
+                            android:id="@+id/id_type_text"
+                            android:textColor="@color/colorTextMain"
+                            android:paddingTop="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:text="手机"/>
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+                <com.js.oldmarket.view.GridViewForScrollView
+                    android:numColumns="2"
+                    android:horizontalSpacing="10dp"
+                    android:verticalSpacing="10dp"
+                    android:id="@+id/id_girdview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:text="加载更多"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:id="@+id/id_more_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
+            </LinearLayout>
+        </ScrollView>
+    </com.js.oldmarket.view.SwipeRefresh>
+
+
+</LinearLayout>

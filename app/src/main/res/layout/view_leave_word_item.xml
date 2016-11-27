@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorAPPBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <com.js.oldmarket.view.RoundImageView
+            android:id="@+id/id_image_head"
+            android:src="@drawable/head"
+            imagecontrol:border_inside_color="#fff7f2e9"
+            imagecontrol:border_thickness="2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/id_text_user_name"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorTextMain"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/id_text_phone"
+            android:textColor="@color/colorTextPrompt"
+            android:gravity="center_vertical|right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f7f4f4"/>
+    <TextView
+        android:id="@+id/id_text_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textColor="@color/colorTextMain"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <TextView
+        android:id="@+id/id_text_offer"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textColor="@color/colorMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:text="2015"
+            android:id="@+id/id_text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorTextPrompt"
+            android:gravity="center_vertical|right"/>
+        <LinearLayout
+            android:id="@+id/id_view_reply"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/id_text_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="拨打电话"
+                android:textColor="@color/colorTextPrompt"
+                android:gravity="center"/>
+            <!--<TextView-->
+                <!--android:id="@+id/id_text_reply"-->
+                <!--android:background="@drawable/black_stroke_background"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:text="回复(0)"-->
+                <!--android:textColor="@color/colorTextPrompt"/>-->
+        </LinearLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:background="@color/colorAPPBackground"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+</LinearLayout>

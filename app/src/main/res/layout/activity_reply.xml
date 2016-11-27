@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        app:logo="@null"
+        android:id="@+id/id_toolbar"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:background="@color/colorMain"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_alignParentLeft="true"
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_arrow_left"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="留言"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/id_toolbar">
+
+
+
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:background="@color/colorWhite"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/head"
+                android:layout_gravity="center_vertical"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="疯狂的可乐"
+                android:textColor="@color/colorTextMain"
+                android:gravity="center"/>
+            <TextView
+                android:text="06-04-14 17:00"
+                android:textColor="@color/colorTextPrompt"
+                android:gravity="center_vertical|right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f7f4f4"/>
+        <TextView
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="便宜点可以吗？800卖不"
+            android:textColor="@color/colorTextMain"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:paddingBottom="12dp"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+            <TextView
+                android:background="@drawable/black_stroke_background"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="回复"
+                android:textColor="@color/colorTextPrompt"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <EditText
+            android:id="@+id/id_edit_leave_word"
+            android:hint="输入回复"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="60dp"/>
+        <Button
+            android:id="@+id/id_send_leave_word"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="3dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:text="发送"
+            android:background="@color/colorMain"/>
+    </RelativeLayout>
+</RelativeLayout>
